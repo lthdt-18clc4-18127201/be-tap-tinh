@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to right, green, blue);
+  color: white;
+}
+
+#anoucement {
+  color: rgb(255, 0, 0);
+  font-size: 1.5em;
+}
+
+.container {
+  display: block;
+  margin: auto;
+}
+
+.align-checkbox {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,60 @@
+<form action="calc">
+    <div class="row-4">
+        <div class="row mb-3">
+            <div class="col-1">
+                <label for="number1" class="col-form-label label-num1" >Số thứ nhất</label>
+            </div>
+            <div class="col-5">
+                <input type="text" class="form-control" id="number1" onmouseout="isNumber()" name="x" value={{x}}>
+            </div>
+            <div class="col-4 align-checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="+" value="Cong">
+                    <label class="form-check-label" for="+">Cộng</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="-" value="Tru">
+                    <label class="form-check-label" for="-">Trừ</label>
+                </div>
+        </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-1">
+                <label for="number2" class="col-form-label label-num2">Số thứ hai</label>
+            </div>
+            <div class="col-5">
+                <input type="text" class="form-control" id="number2" onmouseout="isNumber()" name="y" value={{y}}>
+            </div>
+            <div class="col-4 align-checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="*" value="Nhan">
+                    <label class="form-check-label" for="*">Nhân</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="/" value="Chia">
+                    <label class="form-check-label" for="/">Chia</label>
+                </div>
+        </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col-1">
+                <label for="result" class="col-form-label" >Kết quả</label>
+            </div>
+            <div class="col-5">
+                <input type="text" class="form-control" id="result" value={{result}}>
+            </div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-primary" onclick="Calculate()">Tính</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-1">
+                <label for="number1" class="col-form-label">Thông báo</label>
+            </div>
+            <div class="col-5 align-text">
+                <span id="anoucement">{{notification}}</span>
+            </div>
+        </div>
+    </div>
+</form>
